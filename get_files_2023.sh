@@ -39,7 +39,7 @@ current_date=$(date +%Y-%m-%d)
 previous_month=$(date -d "$current_date - 1 month" +%Y-%m-%d)
 valid_end="${previous_month}"
 
-if [[ $start_date < "2010-02-01" || $end_date > $valid_end ]]; then
+if [[ $start_date < "2023-01-01" || $end_date > $valid_end ]]; then
   echo "Invalid date range. Please enter dates between February 2010 and the previous month of the current date."
   exit 1
 fi
@@ -61,18 +61,12 @@ while [[ $current_date < $end_date ]]; do
   # Create the folder for the current month if it doesn't exist
   mkdir -p "data/${year}/${month}"
 
-  # Determine the file URL based on the year
-  if [[ $year == "2023" ]]; then
-    file_url="https://ecobici.cdmx.gob.mx/wp-content/uploads/${year}/${month}/ecobici_${year}_${month}.csv"
-  else
-    file_url="https://ecobici.cdmx.gob.mx/wp-content/uploads/${year}/${month}/${year}-${month}.csv"
-  fi
+  # Make URL
+
+  file_url="https://ecobici.cdmx.gob.mx/wp-content/uploads/2023/10/ecobici_${year}_${month}.csv"
 
   # Download file
   wget "$file_url" -P "data/${year}/${month}/"
-
-  # Rename the downloaded file to YYYY-MM.csv
-  mv "data/${year}/${month}/ecobici_${year}_${month}.csv" "data/${year}/${month}/${year}-${month}.csv"
 
   # Move to the next month
   current_date=$(date -d "$current_date + 1 month" +%Y-%m-%d)
