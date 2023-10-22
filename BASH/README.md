@@ -1,6 +1,6 @@
 # Instrucciones BASH
 
-En este archivo se presentan las intrucciones sobre cómo ejecutar los scripts que cubren lo indicado en la tarea.
+A continuación se presentan las intrucciones sobre cómo ejecutar los scripts que cubren lo indicado en la tarea.
 
 ## Consideraciones
 
