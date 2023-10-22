@@ -1,7 +1,9 @@
 # Instrucciones BASH
+
 En este archivo se presentan las intrucciones sobre cómo ejecutar los scripts que cubren lo indicado en la tarea.
 
 ## Consideraciones
+
 Debido a las irregularidades de los URL de los archivos de Ecobici, se hicieron distintos scripts para la descarga.
 
 1. El archivo [get_files.sh](get_files.sh) obtiene todos los archivos si los URL fueran regulares.
@@ -28,7 +30,6 @@ A continuación se enlistan los archivos del proceso, en orden.
 |[statistics_bici.sh](statistics_bici.sh)|Genera cuántas bicicletas únicas hay y el top de bicicletas con más viajes.
 |[statistics_CE_Retiro.sh](statistics_CE_Retiro.sh)|Genera cuántos centros de retiro existen y el top de centros con más retiros. Coinciden con los de arribo en cantidad de valores únicos  y nombres.
 |[statistics_CE_Arribo.sh](statistics_CE_Arribo.sh)|Genera cuántos centros de arribo existen y el top de centros con más retiros. Coinciden con los de retiro en cantidad de valores únicos y nombres.
-
 
 ## Otros archivos
 
