@@ -9,7 +9,7 @@ mkdir -p "$download_folder"
 
 # Read file paths and download files
 while IFS= read -r file_path; do
-  # Download file with original filename
+
   wget "$file_path" -P "$download_folder/"
 
 done < "$input_file"
