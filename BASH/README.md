@@ -9,9 +9,9 @@ Debido a las irregularidades de los URL de los archivos de Ecobici, se hicieron 
 1. El archivo [get_files.sh](get_files.sh) obtiene todos los archivos si los URL fueran regulares.
 2. El archivo [get_files_2023.sh](get_files_2023.sh) obtiene los archivos con restricción de usar solamente la carpeta de 2023 como indicó el profesor.
 3. Se creó un método que descarga todos los archivos de ecobici. A continuación los pasos:
-  1. [get_all_paths.sh](get_all_paths.sh) Busca todos los paths en el código html de la página web usando expresiones regulares.
-  2. [file_paths.txt](file_paths.txt) Almacena todos los paths encontrados en la página web.
-  3. [download_files.sh](download_files.sh) Descarga todos los archivos desde las URL contenidas en el archivo file_paths.txt.
+  - [get_all_paths.sh](get_all_paths.sh) Busca todos los paths en el código html de la página web usando expresiones regulares.
+  - [file_paths.txt](file_paths.txt) Almacena todos los paths encontrados en la página web.
+  - [download_files.sh](download_files.sh) Descarga todos los archivos desde las URL contenidas en el archivo file_paths.txt.
 
 ## Archivos
 
