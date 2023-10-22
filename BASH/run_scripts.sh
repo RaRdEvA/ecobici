@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of bash scripts to run
-script_list=("get_files_2023.sh" "rename_files.sh" "consolidate_files.sh" "statistics_genero.sh" "statistics_edad.sh" "statistics_bici.sh" "statistics_CE_Retiro.sh" "statistics_CE_Arribo.sh")
+script_list=("get_files_2023.sh" "rename_files.sh" "consolidate_files.sh" "statistics_files.sh"  "statistics_genero.sh" "statistics_edad.sh" "statistics_bici.sh" "statistics_CE_Retiro.sh" "statistics_CE_Arribo.sh")
 
 # Iterate through the script list and run each script
 for script in "${script_list[@]}"; do

@@ -44,6 +44,8 @@ if [[ $start_date < "2023-01-01" || $end_date > $valid_end ]]; then
   exit 1
 fi
 
+end_date=$(date -d "$end_date + 1 month" +%Y-%m-%d)
+
 # Delete existing "data" folder and recreate it
 rm -rf data
 mkdir -p data
@@ -55,18 +57,12 @@ while [[ $current_date < $end_date ]]; do
   year=$(date -d "$current_date" +%Y)
   month=$(date -d "$current_date" +%m)
 
-  # Create the folder for the current year if it doesn't exist
-  mkdir -p "data/${year}"
-
-  # Create the folder for the current month if it doesn't exist
-  mkdir -p "data/${year}/${month}"
-
   # Make URL
 
   file_url="https://ecobici.cdmx.gob.mx/wp-content/uploads/2023/10/ecobici_${year}_${month}.csv"
 
   # Download file
-  wget "$file_url" -P "data/${year}/${month}/"
+  wget "$file_url" -P "data/"
 
   # Move to the next month
   current_date=$(date -d "$current_date + 1 month" +%Y-%m-%d)
