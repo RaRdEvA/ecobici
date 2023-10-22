@@ -31,3 +31,9 @@ A continuación se enlistan los archivos del proceso, en orden.
 
 
 ## Otros archivos
+
+A continuación se enlistan otros archivos que se usaron durante la tarea.
+
+|Archivo|Descripción
+|-|-
+|[get_headers.sh](get_headers.sh)|Lee los archivos en la carpeta "data" para obtener los encabezados y guardarlos en el archivo "headers.txt
