@@ -55,7 +55,8 @@ df %>%
   geom_tile() +
   scale_fill_gradient(low = "white", high = "steelblue")
 
-#Escriban 5 preguntas más y respóndanlas.
+# Make 5 more questions and answer them.
+
 # add a column that labels if the origin and destination are the same as "same" or "different" if they aren't
 df <- df %>% mutate(same = ifelse(Ciclo_Estacion_Retiro == Ciclo_Estacion_Arribo, "same", "different"))
 
